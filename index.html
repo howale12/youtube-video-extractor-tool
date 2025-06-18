@@ -1,0 +1,89 @@
+<div class="extractor-header">
+    <div class="header-left">
+        <a href="https://www.youtube.com" target="_blank" class="youtube-link">
+            <i class="fab fa-youtube header-icon"></i>
+        </a>
+        <h3>YouTube Video Extractor</h3>
+    </div>
+    <div class="header-right">
+        <span class="extractor-version">v2.5</span>
+        <button class="info-btn" title="What's new in this version">
+            <i class="fas fa-info-circle"></i>
+        </button>
+    </div>
+</div>
+
+<style>
+    .extractor-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .youtube-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-icon {
+        color: #ff0000;
+        font-size: 28px;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .youtube-link:hover .header-icon {
+        color: #cc0000;
+        transform: scale(1.1);
+    }
+    
+    .extractor-header h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 0;
+        font-weight: 600;
+    }
+    
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .extractor-version {
+        background-color: #f0f0f0;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        color: #666;
+    }
+    
+    .info-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #666;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+    }
+    
+    .info-btn:hover {
+        color: #333;
+    }
+</style>
+
+<script>
+    // Add click handler for info button
+    document.querySelector('.info-btn').addEventListener('click', function() {
+        alert('Version 2.5 Updates:\n- Improved download speeds\n- Added 4K support\n- Enhanced video quality detection');
+    });
+</script>
